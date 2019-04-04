@@ -25,9 +25,9 @@ hardware.
 endef
 
 define Build/Prepare
-        mkdir -p $(PKG_BUILD_DIR)
-        $(CP) /home/openwrt/tmp/SoftFM/* $(PKG_BUILD_DIR)/
-#       $(call Build/Prepare/Default)
+#        mkdir -p $(PKG_BUILD_DIR)
+#        $(CP) /home/openwrt/tmp/SoftFM/* $(PKG_BUILD_DIR)/
+       $(call Build/Prepare/Default)
 #       export PKG_CONFIG_PATH=$(BUILD_DIR)/rtl-sdr-0.5.3-20150608-/src/
 endef
 
