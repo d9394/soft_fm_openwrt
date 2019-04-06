@@ -9,7 +9,7 @@
 +set(CMAKE_CXX_FLAGS "-W -Wall -std=gnu++11 -O3 -minterlink-compressed -ffast-math -ftree-vectorize ${EXTRA_FLAGS}")
  
  add_executable(softfm
-@@ -27,6 +27,8 @@
+@@ -44,6 +44,8 @@
  else()
 +    set(RTLSDR_INCLUDE_DIR "/home/openwrt/openwrt/build_dir/target-mipsel_24kc_musl/rtl-sdr-0.5.3-20150608-/include")
 +    set(RTLSDR_LIBRARY "/home/openwrt/openwrt/build_dir/target-mipsel_24kc_musl/rtl-sdr-0.5.3-20150608-/src/librtlsdr.a") 
@@ -18,3 +18,10 @@
      message("or with -DRTLSDR_INCLUDE_DIR=/path/rtlsdr/include")
      message("        -DRTLSDR_LIBRARY=/path/rtlsdr/lib/librtlsdr.a")
  endif()
+@@ -54,5 +54,5 @@
+# Compiler flags.
+# Enable speed-based optimization
+-set(CMAKE_CXX_FLAGS "-Wall -std=c++11 -O3 -ffast-math -ftree-vectorize -march=native ${EXTRA_FLAGS}")
++set(CMAKE_CXX_FLAGS "-Wall -std=c++11 -O3 -ffast-math -ftree-vectorize -march=24kc ${EXTRA_FLAGS}")
+# Use conservative options when failed to run
+#set(CMAKE_CXX_FLAGS "-Wall -std=c++11 -O2 ${EXTRA_FLAGS}")
