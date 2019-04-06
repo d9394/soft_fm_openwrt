@@ -18,10 +18,7 @@ include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/cmake.mk
 
 define Package/softfm-jj1bdx/Default
-  TITLE:=SoftFM is a software-defined radio receiver for FM broadcast radio. \
-It is written in C++ and uses RTL-SDR to interface with RTL2832-based \
-hardware.\
-  Version 0.2.3, 16-JAN-2019: this is the final release
+  TITLE:=Version 0.2.3, 16-JAN-2019: this is the final release
   URL:=https://github.com/jj1bdx/softfm-jj1bdx
 endef
 
